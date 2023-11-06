@@ -3,11 +3,21 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+/**
+ * acceptCookiesButton -
+ * closePopupButton -
+ * toolboxButton -
+ */
+
 public class HomePage {
     private static WebDriver driver;
+
     private static By acceptCookiesButton = By.id("cookie_action_close_header");
+
     private static By closePopupButton = By.xpath("//button[@class='pum-close popmake-close']");
+
     private static By toolboxButton = By.xpath("//a[@href='https://hightest.nc/toolbox/']");
+
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
